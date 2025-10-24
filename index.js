@@ -20,7 +20,9 @@ function rollDice(){
     }
 
     result.textContent=`The result is ${values.join(" ")}`;
-    
-    diceImages.innerHTML=images.join(" ");
+
+    setTimeout(() => {
+        diceImages.innerHTML=images.join(" ");
+    },400);
 
 }
