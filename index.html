@@ -8,18 +8,26 @@
 </head>
 <body>
     
-    <div id="container">
-        <h1>Dice Roller</h1>
-        <label># of dice</label>
-        <input type="number" value="1" id="numDice"> <br>
-        <button onclick="rollDice()">Roll Dice</button> <br>
-        <div id="diceResult">
-            
-        </div> <br>
-        <div id="diceImages">
+    <form id="container">
+        <h1>Password Generator</h1>
+        <label for="allowLower">Allow Lowercase </label>
+        <input type="checkbox" id="allowLower" name="allowedchar"><br>
+        
+        <label for="allowUpper">Allow Uppercase</label>
+        <input type="checkbox" id="allowUpper" name="allowedchar"><br>
+        
+        <label for="allowNumbers">Allow Numbers</label>
+        <input type="checkbox" id="allowNumbers" name="allowedchar"><br>
 
-        </div>
-    </div>
+        <label for="allowSymbols">Allow Symbols</label>
+        <input type="checkbox" id="allowSymbols" name="allowedchar"><br>
+        
+        <button onclick="generate()" type="button">Generate Password</button> 
+        <div id="passwordGen">
+            
+        </div> 
+        
+    </form>
     
 
     <script src="index.js"></script>

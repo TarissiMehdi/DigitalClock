@@ -3,7 +3,7 @@ body{
     background-color: hsl(0,0%,95%);
 }
 
-#container{
+ #container{
     
     background-color: hsl(0,0%,100%);
     text-align: center;
@@ -14,7 +14,7 @@ body{
     border-color:aquamarine;
     padding: 25px;
     box-shadow: 5px 15px 15px aquamarine ;
-}
+} 
 
 h1{
     color: hsl(223, 100%, 64%);
@@ -45,17 +45,5 @@ button:active{
    background-color:hsl(160, 100%, 75%);
 }
 
-input{
-    font-size: 1.5rem;
-    text-align: center;
-    width: 150px;
-    
-}
 
-#diceResult{
-    margin: 25px;
-}
 
-#diceImages img{
-    width: 90px;
-}
