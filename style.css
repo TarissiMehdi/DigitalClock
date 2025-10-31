@@ -1,9 +1,35 @@
 body{
-    font-family: Arial, sans-serif;
-    background-color: hsl(0,0%,95%);
+    margin: 0;
+    background-image: url(new-york-city-skyline-central-park-dszc.jpg);
+    background-position: center;
+    /* prevent tiling and make the image fill the viewport */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* optional: keep background fixed while content scrolls */
+    background-attachment: fixed;
+    /* fallback background color while image loads */
+    background-color: #000;
 }
 
- #container{
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    width: 100%;
+}
+
+ /* #container{
     
     background-color: hsl(0,0%,100%);
     text-align: center;
@@ -26,7 +52,7 @@ label{
     
     font-weight: bold;
     font-size: 1.5rem;
-}
+} */
 
 button{
     background-color: hsl(160, 100%, 55%);
